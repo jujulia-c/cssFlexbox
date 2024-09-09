@@ -1,0 +1,37 @@
+.container{
+    background-color: #e9d4fd;
+    height: 300px;
+
+    /* define um container flex */
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+}
+.item{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    color: rgb(128, 238, 244);
+    font-size: 30px;
+
+    /* alinhando os números pro centro da caixinha */
+    display: flex;
+
+    /* justify-content:flex end alinha a direita */
+    justify-content:center;
+
+    /* align:items:flex-end; alinha os items na base */
+    align-items: center;
+
+}
+.item:nth-child(2){
+    flex-shrink: 3;
+}
+.item:nth-child(5){
+    flex-grow: 1;
+}
+.item:nth-child(3){
+    order: 2;
+}
+    background-color: rgba(174, 133, 186, 0.808);
