@@ -1,37 +1,23 @@
-.container{
-    background-color: #e9d4fd;
-    height: 300px;
-
-    /* define um container flex */
-    display: flex;
-    flex-direction:row;
-    justify-content: center;
-    align-items: center;
+/* zerando as configurações */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-.item{
-    width: 100px;
-    height: 100px;
-    margin: 10px;
-    color: rgb(128, 238, 244);
-    font-size: 30px;
 
-    /* alinhando os números pro centro da caixinha */
-    display: flex;
+/* Etilizando o parágrafo */
+.products p {
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    color: #333;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-    /* justify-content:flex end alinha a direita */
-    justify-content:center;
-
-    /* align:items:flex-end; alinha os items na base */
-    align-items: center;
-
+header {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    color:#333;
+    padding:30px;
+    background-color: #d3d3d3;
 }
-.item:nth-child(2){
-    flex-shrink: 3;
-}
-.item:nth-child(5){
-    flex-grow: 1;
-}
-.item:nth-child(3){
-    order: 2;
-}
-    background-color: rgba(174, 133, 186, 0.808);
